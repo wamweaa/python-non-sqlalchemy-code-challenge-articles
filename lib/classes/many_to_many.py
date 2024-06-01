@@ -2,12 +2,6 @@ class Article:
     all = []
 
     def __init__(self, author, magazine, title):
-        if not isinstance(author, Author):
-            raise ValueError("Author must be of type Author")
-        if not isinstance(magazine, Magazine):
-            raise ValueError("Magazine must be of type Magazine")
-        if not isinstance(title, str) or not (5 <= len(title) <= 50):
-            raise ValueError("Title must be a string between 5 and 50 characters, inclusive")
 
         self._author = author
         self._magazine = magazine
